@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Full Screen Scrolling Using PagePiling.js</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.6/jquery.pagepiling.css" />
+    <style type="text/css">
+      .section{
+      font-size: 150px;
+      text-align: center;
+      color: #fff;
+      }
+      .bg-1{
+      background: url("1.jpg");
+      background-size: cover;
+      }
+      .bg-2{
+      background: url("2.jpg");
+      background-size: cover;
+      }
+      .bg-3{
+      background: url("3.jpg");
+      background-size: cover;
+      }
+      .bg-4{
+      background: url("4.jpg");
+      background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="pagepiling">
+      <div class="section bg-1">Nature 1</div>
+      <div class="section bg-2">Nature 2</div>
+      <div class="section bg-3">Nature 3</div>
+      <div class="section bg-4">Nature 4</div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pagePiling.js/1.5.5/jquery.pagepiling.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+      $('#pagepiling').pagepiling();
+      });
+    </script>
+  </body>
+</html> 
